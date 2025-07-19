@@ -1,4 +1,6 @@
 import React from "react";
+
+// components
 import TodoForm from "./components/TodoForm";
 
 const App = () => {
