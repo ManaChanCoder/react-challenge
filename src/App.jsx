@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import Card from "./components/Card";
+import ProfileCard from "./components/ProfileCard";
 
 const App = () => {
   return (
     <div>
-      <Card />
+      <ProfileCard />
     </div>
   );
 };
