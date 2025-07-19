@@ -1,37 +1,15 @@
 import React from "react";
 
 // components
+import { MyProps } from "./MyProps";
 import graduationPicture from "../asset/Grad Pic - Toga.jpg";
 
-const pictureSizes = {
-  width: "400px",
-  height: "350px",
-  borderRadius: "4px",
-};
+const name = "Rhogenn Saingga";
+const bio =
+  "Aspiring frontend developer with basic knowledge of HTML, CSS, JavaScript, React, and beginner experience in the MERN stack, TailwindCSS, and Bootstrap. Currently focused on improving through hands-on projects and open to entry-level opportunities.";
 
 const ProfileCard = () => {
-  return (
-    <div className="flex justify-center align-middle p-[20px]">
-      <div className="bg-amber-50 p-6 rounded-xs w-[50%]">
-        <h2 className="text-2xl text-center uppercase">Rhogenn Saingga</h2>
-
-        <div className="flex justify-center my-[20px]">
-          <img
-            src={graduationPicture}
-            alt="My Graduation Picture"
-            style={pictureSizes}
-          />
-        </div>
-
-        <p className="">
-          Aspiring frontend developer with basic knowledge of HTML, CSS,
-          JavaScript, React, and beginner experience in the MERN stack, Tailwind
-          CSS, and Bootstrap. Currently focused on improving through hands-on
-          projects and open to entry-level opportunities.
-        </p>
-      </div>
-    </div>
-  );
+  return <MyProps name={name} bio={bio} image={graduationPicture} />;
 };
 
 export default ProfileCard;
