@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import Visitor from "./components/Visitor";
+import FetchAPI from "./components/fetchAPI";
 
 const App = () => {
   return (
     <div>
-      <Visitor />
+      <FetchAPI />
     </div>
   );
 };
