@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import TodoForm from "./components/TodoForm";
+import Visitor from "./components/Visitor";
 
 const App = () => {
   return (
     <div>
-      <TodoForm />
+      <Visitor />
     </div>
   );
 };
