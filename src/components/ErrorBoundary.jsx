@@ -9,8 +9,10 @@ class ErrorBoundary extends Component {
   static getDerivedStateFromError(error) {
     return { hasError: true };
   }
+
   componentDidCatch(error, errorInfo) {
-    console.log(`Caught by ErrorBoundary: ${error}, ${errorInfo}`);
+    console.log(`Error Caught by ErrorBoundary: ${error}`);
+    console.log(`Component Stack Trace: ${errorInfo}`);
   }
 
   render() {
@@ -21,7 +23,6 @@ class ErrorBoundary extends Component {
         </div>
       );
     }
-
     return this.props.children;
   }
 }

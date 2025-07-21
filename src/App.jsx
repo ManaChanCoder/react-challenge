@@ -1,15 +1,12 @@
 import React from "react";
 
 // components
-import ErrorBoundary from "./components/ErrorBoundary";
-import Buggy from "./components/Buggy";
 
 const App = () => {
+  throw new Error("Simulated Crash");
   return (
     <div className="p-4">
-      <ErrorBoundary>
-        <Buggy shouldCrash={true} />
-      </ErrorBoundary>
+      <div className=""></div>
     </div>
   );
 };
