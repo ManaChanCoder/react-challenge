@@ -1,12 +1,15 @@
 import React from "react";
 
 // components
-import FetchAPI from "./components/fetchAPI";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Buggy from "./components/Buggy";
 
 const App = () => {
   return (
-    <div>
-      <FetchAPI />
+    <div className="p-4">
+      <ErrorBoundary>
+        <Buggy shouldCrash={true} />
+      </ErrorBoundary>
     </div>
   );
 };
