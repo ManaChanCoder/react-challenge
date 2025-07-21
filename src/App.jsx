@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
+import ProfileCard from "./components/ProfileCard";
 
 const App = () => {
-  throw new Error("Simulated Crash");
   return (
     <div className="p-4">
-      <div className=""></div>
+      <ProfileCard />
     </div>
   );
 };
