@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import CounterControls from "./components/CounterControls";
+import ThemeToggleButton from "./components/ThemeToggleButton";
 
 const App = () => {
   return (
     <div className="">
-      <CounterControls />
+      <ThemeToggleButton />
     </div>
   );
 };
