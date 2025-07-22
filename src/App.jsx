@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import ProfileCard from "./components/ProfileCard";
+import CounterControls from "./components/CounterControls";
 
 const App = () => {
   return (
-    <div className="p-4">
-      <ProfileCard />
+    <div className="">
+      <CounterControls />
     </div>
   );
 };
