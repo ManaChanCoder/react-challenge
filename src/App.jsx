@@ -1,12 +1,16 @@
 import React from "react";
 
+// bootstrap
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // components
-import ThemeToggleButton from "./components/ThemeToggleButton";
+import Todos from "./components/Todos";
 
 const App = () => {
   return (
     <div className="">
-      <ThemeToggleButton />
+      <Todos />
     </div>
   );
 };
