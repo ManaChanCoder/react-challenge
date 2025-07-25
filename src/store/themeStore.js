@@ -1,15 +1,20 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
-const savedTheme = localStorage.getItem("themeMode") === "true";
-const themeStore = create((set) => ({
-  isDark: savedTheme,
+const themeStore = create(
+  persist(
+    (set) => ({
+      isDark: false, // default theme is light
 
-  toggleTheme: () =>
-    set((state) => {
-      const updatedTheme = !state.isDark;
-      localStorage.setItem("themeMode", updatedTheme);
-      return { isDark: updatedTheme };
+      toggleTheme: () =>
+        set((state) => ({
+          isDark: !state.isDark,
+        })),
     }),
-}));
+    {
+      name: "theme-mode",
+    }
+  )
+);
 
 export default themeStore;

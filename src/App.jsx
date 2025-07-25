@@ -1,16 +1,12 @@
 import React from "react";
 
-// bootstrap
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 // components
-import Todos from "./components/Todos";
+import Profile from "./components/Profile";
 
 const App = () => {
   return (
     <div className="">
-      <Todos />
+      <Profile />
     </div>
   );
 };
