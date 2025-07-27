@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import Profile from "./components/Profile";
+import TaskModule from "./components/TaskModule";
 
 const App = () => {
   return (
-    <div className="">
-      <Profile />
+    <div>
+      <TaskModule />
     </div>
   );
 };
