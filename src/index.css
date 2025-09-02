@@ -1,0 +1,35 @@
+.bg-light-green {
+  background: #eaf0d1;
+}
+.h-screen {
+  height: 100vh;
+}
+.fs-small {
+  font-size: 14px;
+}
+.toast-position {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #302f2f;
+}
+p {
+  margin: 0;
+}
+.form-container-size,
+form {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .form-container-size {
+    width: 100%;
+  }
+  .h-screen {
+    height: 100%;
+  }
+  form {
+    width: 80%;
+  }
+}
